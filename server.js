@@ -33,3 +33,7 @@ app.post('/api2', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
+module.exports.handler = async (event, context) => {
+    return require('netlify-lambda-helper')(app)(event, context);
+  };

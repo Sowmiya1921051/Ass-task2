@@ -2,7 +2,7 @@ async function callApi1() {
     const str1 = prompt("Enter the first string:");
     const str2 = prompt("Enter the second string:");
   
-    const response = await fetch(`http://localhost:3000/api1?str1=${str1}&str2=${str2}`);
+    const response = await fetch(`http://ggsh.onrender.com/api1?str1=${str1}&str2=${str2}`);
     const result = await response.text();
   
     document.getElementById("result").innerText = result;

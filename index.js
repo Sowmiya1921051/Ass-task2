@@ -13,7 +13,7 @@ async function callApi1() {
     const num2 = prompt("Enter the second number:");
     const num3 = prompt("Enter the third number:");
   
-    const response = await fetch('http://localhost:3000/api2', {
+    const response = await fetch('http://ggsh.onrender.com:3000/api2', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
